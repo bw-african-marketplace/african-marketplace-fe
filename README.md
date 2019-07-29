@@ -1,2 +1,2 @@
-# african-marketplave-FE
+# african-marketplace-FE
 Front-end app

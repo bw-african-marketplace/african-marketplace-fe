@@ -1,4 +1,4 @@
 # african-marketplace-FE
 Front-end app
 
-Contributors: Bryan Szendel
+Contributors: Bryan Szendel, Marcus Jones

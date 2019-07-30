@@ -18,7 +18,7 @@ const Comparison = () => {
             <span className="date">Category: Beans</span>
           </Card.Meta>
           <Card.Description>
-            An aromatic blend of darks and mediums.
+            An aromatic blend of dark and medium roasts.
           </Card.Description>
         </Card.Content>
       </Card>

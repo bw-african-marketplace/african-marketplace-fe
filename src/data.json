@@ -1,4 +1,4 @@
-[
+const information = [
   {
     "category": "Animal Products",
     "subCategory": "Animal Products - Other",

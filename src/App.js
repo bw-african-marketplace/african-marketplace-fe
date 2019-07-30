@@ -1,15 +1,17 @@
 import React from 'react';
-import { Route } from "react-router-dom";
 import './App.css';
-import { Home, About, Contact, Navigation } from './components';
+import Comparison from './components/Comparison'
+import NavTab from './components/NavTab';
+import 'semantic-ui-react'
 
-const App = () => (
-  <div>
-    <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
-    <Route path="/contact" component={Contact} />
-    <Navigation />
-  </div>
-);
+
+function App() {
+  return (
+    <div className="App">
+      <NavTab />
+      <Comparison />
+    </div>
+  );
+}
 
 export default App;

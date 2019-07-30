@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 
 const Comparison = () => {
   return (
-    <Container>
+    <Container style={{ display: "flex", justifyContent: "center" }}>
       <ProductCard />
       <ProductCard />
       <ProductCard />

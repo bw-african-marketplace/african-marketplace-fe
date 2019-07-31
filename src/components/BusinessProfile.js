@@ -10,36 +10,29 @@ const BusinessProfile = (props) =>{
 
 // const products = [productInfo, setProductInfo] = useState([{}])
 
+
+
     return (
-        <div>
-            {productInfo.map(item => {
-                return (
-                    <Grid>
-                        <Grid.Row columns={3}>
-                            <Grid.Column>
-                                <Image src='https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/12_powerhouse_vegetables_slideshow/intro_cream_of_crop.jpg' />
-                                    <h3 className= 'product'>{item.product}</h3>
-                                    <p className= 'price'>{item.price}</p>
-                                    <p className= 'description'>{item.description}</p>
-                                    <p className= 'rating'>{item.rating}</p>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
-                                <h3 className= 'product'>{item.product}</h3>
-                                    <p className= 'price'>{item.price}</p>
-                                    <p className= 'description'>{item.description}</p>
-                                    <p className= 'rating'>{item.rating}</p>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
-                                <h3 className= 'product'>{item.product}</h3>
-                                    <p className= 'price'>{item.price}</p>
-                                    <p className= 'description'>{item.description}</p>
-                                    <p className= 'rating'>{item.rating}</p>
-                            </Grid.Column>
-                        </Grid.Row>
-                    </Grid>  
-            )})}
+    <div>
+        <Grid>
+            <Grid.Row columns={3}>
+                {productInfo.map(item => {
+                    return (
+                    <Grid.Column className='infoGrid'> 
+                        <Image src= {item.image} />
+                            <div className= 'information'>
+                                
+                                <h3 className= 'product'>{item.name}</h3>
+                                <p className= 'price'>Price{item.price}</p>
+                                <p className= 'description'>Description{item.description}</p>
+                                <p className= 'rating'>Rating{item.rating}</p>
+                                <h6 className ='item-id'>Item ID {item.id}</h6>
+                                
+                            </div>
+                    </Grid.Column>
+                    )})}
+                </Grid.Row>
+            </Grid>    
         </div>
     
     )

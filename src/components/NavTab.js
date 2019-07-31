@@ -52,9 +52,8 @@ const NavTab = (props) =>  {
                 <button icon='search'
                     placeholder='Search...'>Search
                 </button>
-
+                <input className='searchBox'  Business Profile />
               </Menu.Item>
-              <input className='searchBox'  Business Profile />
             </Menu.Menu>
           </Menu>
           

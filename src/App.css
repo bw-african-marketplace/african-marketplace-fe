@@ -1,9 +1,13 @@
 
 
+body {
+  margin: 0 auto;
+  width:80%
+}
 .App {
   margin: auto 0;
   text-align: center;
-  width:80%;
+;
   border: orange 3px solid;
   background: black;
 }
@@ -46,7 +50,7 @@
 }
 
 .business {
-  margin-left: 670px
+  margin-left: auto
 }
 
 .logo-image {
@@ -90,5 +94,23 @@ img {
 }
 
 .searchBox {
-  width: 320px
+  width: auto
+}
+
+.infoGrid{
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+
+}
+
+.information {
+  position: absolute;
+  left:0;
+  width: 60%;
+  background: #1a1a1a66;
+  top: 0;
+  height: 100%;
+  color: #fafafa;
+
 }

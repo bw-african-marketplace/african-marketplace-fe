@@ -1,6 +1,8 @@
 //tab component
 import React, {useState} from 'react'
 import { Menu, Segment } from 'semantic-ui-react'
+import  '../App.css'
+
 
 
 const NavTab = (props) =>  {
@@ -17,6 +19,12 @@ const NavTab = (props) =>  {
     
     return (
         <div>
+          <div className= 'logo-title-container'>
+            <div className='logo-container'>
+              <div className='logo-image'></div>
+            </div>
+              <div className= 'title'>Business Profile</div>
+          </div>
            <Segment>
             <img alt='logo' src='../images/AfricanMarketplace-logo.png' />
           </Segment>
@@ -35,23 +43,28 @@ const NavTab = (props) =>  {
                 active={activeItem === 'Contact Us'}
                 onClick={handleItemClick}
               />
-              <Menu.Item
+              <Menu.Item className = 'business'
                 name='Business Profile'
                 active={activeItem === 'businessProfile'}
                 onClick={handleItemClick}
               />
-              <Menu.Menu position='right'>
+              <Menu.Menu position='left'>
 
               <Menu.Item>
                 <button icon='search'
-                    placeholder='Search...'>{buttonText} 
+                    placeholder='Search...'>Search
                 </button>
+                <input className='searchBox'  Business Profile />
               </Menu.Item>
             </Menu.Menu>
           </Menu>
-        </div>
-        
-        )
+          
+      <div>
+
+  </div>
+</div>
+   
+      )
 }
 
 export default NavTab;

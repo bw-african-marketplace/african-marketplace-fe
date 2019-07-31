@@ -4,7 +4,7 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
 
-const Comparison = () => {
+const ProductCard = () => {
   return (
     <div>
       <Card centered={true} style={{ maxWidth: "250px", height: "auto", margin: "10px" }}>
@@ -26,4 +26,4 @@ const Comparison = () => {
   );
 };
 
-export default Comparison;
+export default ProductCard;

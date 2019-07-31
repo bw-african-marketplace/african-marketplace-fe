@@ -1,18 +1,20 @@
-body {
-margin: 0 auto;
-width: 80%
-}
+
 body {
   background-image: url(https://ctl.s6img.com/society6/img/MLkJE4ur6g7Zpi0XuI-V3yT7z9c/w_700/canvas/~artwork/s6-original-art-uploads/society6/uploads/misc/9dbd247b72954cc089696e0fcc998b61/~~/modern-faux-grey-silver-glitter-ombre-white-marble-canvas.jpg?wait=0&attempt=0);
   background-position: center;
   background-repeat: no repeat;
   background-attachment: fixed;
   background-size: cover;
-  
+  margin: 0 auto;
+  width: 80%
 }
 
 .App {
+  margin: auto 0;
   text-align: center;
+;
+  border: orange 3px solid;
+  background: black;
 }
 
 .App-logo {
@@ -43,4 +45,77 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.title {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(199, 199, 199);
+  font-size: 80px;
+}
+
+.business {
+  margin-left: auto
+}
+
+.logo-image {
+  display: flex;
+  flex-wrap: wrap;
+  background: url('./images/African-Marketplace-logo.png');
+  height: 150px;
+  width: 150px;
+  background-position: center ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 60px
+  
+ 
+}
+
+
+.logo-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0px;
+  
+}
+
+.logo-container {
+
+}
+
+img {
+  display:flex;
+  flex-wrap: wrap;
+  border-radius: 5%;
+  width:500px;
+  height:500px;
+
+}
+  .ui.grid .row .column img, .ui.grid .row img {
+    max-width: 90%;
+    max-height: 270px;
+}
+
+.searchBox {
+  width: auto
+}
+
+.infoGrid{
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+
+}
+
+.information {
+  position: absolute;
+  left:0;
+  width: 60%;
+  background: #1a1a1a66;
+  top: 0;
+  height: 100%;
+  color: #fafafa;
+
 }

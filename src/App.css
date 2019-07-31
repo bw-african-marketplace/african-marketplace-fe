@@ -2,7 +2,8 @@
 
 body {
   margin: 0 auto;
-  width:80%
+  width:80%;
+  font-size: 62.5%
 }
 .App {
   margin: auto 0;
@@ -63,8 +64,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 60px
-  
- 
 }
 
 
@@ -72,12 +71,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 0px;
-  
-}
-
-.logo-container {
-
+  margin-bottom: 0px; 
 }
 
 img {

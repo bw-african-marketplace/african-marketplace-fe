@@ -7,7 +7,7 @@ import { Card, Image } from "semantic-ui-react";
 const Comparison = () => {
   return (
     <div>
-      <Card centered={true} style={{ maxWidth: "250px", height: "auto", margin: "15px" }}>
+      <Card centered={true} style={{ maxWidth: "250px", height: "auto", margin: "10px" }}>
         <Image
           style={{ maxWidth: "250px" }}
           src="http://placeimg.com/640/360/any"

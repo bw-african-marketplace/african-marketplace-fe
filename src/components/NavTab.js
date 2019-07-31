@@ -18,7 +18,7 @@ const NavTab = (props) =>  {
     return (
         <div>
            <Segment>
-            <img alt='logo' src='./images/African-Marketplace' />
+            <img alt='logo' src='../images/AfricanMarketplace-logo.png' />
           </Segment>
           <Menu pointing>
               <Menu.Item name='Home' 

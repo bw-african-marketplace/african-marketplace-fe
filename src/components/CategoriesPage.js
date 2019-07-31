@@ -4,26 +4,31 @@
 
 import React from "react";
 import { Container, Header, Grid, Card, Image, Link } from "semantic-ui-react";
-import ComparisonPage from "./ComparisonPage"
+import ComparisonPage from "./CategoryItems"
+import CategoryCard from "./CategoryCard"
 
 
-const Comparison = () => {
+const CategoriesPage = () => {
   
-  const animalProducts = require("../images/categories/meats.jpg")
-  const beans = require("../images/categories/beans.jpg")
-  const maize = require("../images/categories/maize.jpg")
-  const rice = require("../images/categories/rice.jpg")
-  const cerealOther = require("../images/categories/wheat.jpg")
-  const fruit = require("../images/categories/fruit.jpg")
-  const peas = require("../images/categories/peas.jpg")
-  const roots = require("../images/categories/roots.jpg")
-  const other = require("../images/categories/coffee.jpg")
-  const vegetables = require("../images/categories/vegetables.jpg")
-  const nuts = require("../images/categories/nuts.jpg")
+  // const animalProducts = require("../images/categories/meats.jpg")
+  // const beans = require("../images/categories/beans.jpg")
+  // const maize = require("../images/categories/maize.jpg")
+  // const rice = require("../images/categories/rice.jpg")
+  // const cerealOther = require("../images/categories/wheat.jpg")
+  // const fruit = require("../images/categories/fruit.jpg")
+  // const peas = require("../images/categories/peas.jpg")
+  // const roots = require("../images/categories/roots.jpg")
+  // const other = require("../images/categories/coffee.jpg")
+  // const vegetables = require("../images/categories/vegetables.jpg")
+  // const nuts = require("../images/categories/nuts.jpg")
 
   return (
     <div>
-      <Container style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+      <Container style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "center" }}>
+        <CategoryCard />
+      </Container>
+    
+      {/* <Container style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
         <Header size="large">Category List</Header>
         <Header size="small">Choose a category below to view products within that category</Header>
         <Grid centered={true} stackable={true}> 
@@ -185,11 +190,11 @@ const Comparison = () => {
 
         </Grid>
       </Container>
-      <ComparisonPage />
+    <ComparisonPage /> */}
     </div>
   );
 };
 
-export default Comparison;
+export default CategoriesPage;
 
 //style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}

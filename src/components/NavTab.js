@@ -1,6 +1,6 @@
 //tab component
 import React, {useState} from 'react'
-import { Menu,} from 'semantic-ui-react'
+import { Menu, Segment } from 'semantic-ui-react'
 import  '../App.css'
 
 
@@ -19,13 +19,15 @@ const NavTab = (props) =>  {
     
     return (
         <div>
-
           <div className= 'logo-title-container'>
             <div className='logo-container'>
               <div className='logo-image'></div>
             </div>
               <div className= 'title'>Business Profile</div>
           </div>
+           <Segment>
+            <img alt='logo' src='../images/AfricanMarketplace-logo.png' />
+          </Segment>
           <Menu pointing>
               <Menu.Item name='Home' 
                 active={activeItem === 'home'} 

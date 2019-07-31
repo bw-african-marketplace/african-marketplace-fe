@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Icon, Image, Item } from 'semantic-ui-react'
 
-const ComparisonPage = () => (
+const CategoryItems = () => (
   <Container>
     <Item.Group>
       <Item>
@@ -46,4 +46,4 @@ const ComparisonPage = () => (
   </Container>
 )
 
-export default ComparisonPage;
+export default CategoryItems;
